@@ -8,3 +8,49 @@
 .pc{
 	display:none;
 }
+
+/*------------------------------------
+ヘッダー
+------------------------------------*/
+header{
+	background-color: var(--primary);
+	height:6rem;
+}
+
+#drwBtn{
+	width: 4rem;
+	height: 4rem;
+	position: relative;
+}
+#drwBtn span{
+	position: absolute;
+	left:0;
+	width: 40px;
+	height:4px;
+	background-color: var(--tertiary);
+}
+
+#drwBtn span:nth-child(1){
+	top:9px;
+}
+#drwBtn span:nth-child(2){
+	top:19px;
+}
+#drwBtn span:nth-child(3){
+	top:29px;
+}
+#drwMenu{
+	position: fixed;
+	top:400px;
+	width: 100%;
+	background-color: var(--primary);
+}
+#drwMenu li{
+	padding:1.6rem;
+	width: 100%;
+	border-bottom:1px solid #fff;
+}
+#drwMenu li a{
+	font-size: 1.4rem;
+	color:var(--tertiary);
+}

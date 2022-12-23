@@ -121,15 +121,12 @@ header .container-m nav.pc li a{
 header .container-m nav.pc li.contact{
 	background-color: var(--tertiary);
 	padding: 4px 8px;
+	margin-right: 0;
 }
 header .container-m nav.pc li.contact img{
 	margin-right: 5px;
 }
-header .container-m nav.pc li.application{
-	background-color: #fff;
-	padding: 4px 8px;
-	margin-right: 0;
-}
+
 header .container-m nav.pc li.contact a{
 	color:#fff;
 }
@@ -154,4 +151,5 @@ footer .container-m li a,
 footer .container-m p{
 	font-size: 1.2rem;
 	line-height: 1;
+	font-weight: 700;
 }
