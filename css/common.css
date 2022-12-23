@@ -97,7 +97,7 @@ header{
 	top:0;
 	left:0;
 	background-color: var(--header);
-	height:10rem;
+	height:8rem;
 }
 header .container-m{
 	display: flex;
@@ -128,6 +128,7 @@ header .container-m nav.pc li.contact img{
 header .container-m nav.pc li.application{
 	background-color: #fff;
 	padding: 4px 8px;
+	margin-right: 0;
 }
 header .container-m nav.pc li.contact a{
 	color:#fff;
@@ -144,6 +145,7 @@ footer .container-m ul{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 100%;
 }
 footer .container-m li{
 	margin-right: 1rem;
