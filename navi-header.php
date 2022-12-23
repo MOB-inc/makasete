@@ -26,5 +26,6 @@
 
 		</ul>
 	</nav>
+	<div id="drwArea">
 
 </header>

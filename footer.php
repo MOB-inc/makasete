@@ -1,19 +1,4 @@
-<?php
-	$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
-	$url = $_SERVER['REQUEST_URI'];
-?>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- IE11をobjectfitに対応 -->
-<?php if (strstr($ua, 'trident') || strstr($ua, 'msie')): ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.1.1/ofi.min.js" integrity="sha512-JgRVw2e/U8o/rGCtrBVX5Eq/woCDoEWBACByptHZeqDueBpSk8Nat7SOf4yimk94Stpx4EIZTbJtJMUv68l7kQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>objectFitImages('img');</script>
-<!-- IE11をカラー変数に対応 -->
-<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
-<?php endif; ?>
-<!-- スリックｊｓ -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
 
 <script>
 
@@ -41,6 +26,27 @@
     };
     $(function(){spvh.view_height.init();});
   }
+
+// ドロワーメニュー
+	$(function() {
+    var pagetop = $("#page_top");
+    //ボタン非表示
+    //pagetop.hide();
+    pagetop.css("display", "none");
+    //100px スクロールしたらボタン表示
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        pagetop.fadeIn();
+      } else {
+        pagetop.fadeOut();
+      }
+    });
+    pagetop.click(function () {
+      $("body, html").animate({ scrollTop: 0 }, 500);
+      return false;
+    });
+  });
+
 
   // TOPに戻る
   $(function() {
