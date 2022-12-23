@@ -7,6 +7,6 @@
 				<li><a href="">利用規約</a></li>
 			</ul>
 		</nav>
-		<p class="copyright">Copyright Ⓒ MAKASETE All rights reserved.</p>
+		<p class="copyright">©2022 MAKASETE.</p>
 	</div>
 </footer>

@@ -104,6 +104,8 @@ header .container-m{
 	align-items: center;
 	justify-content: space-between;
 	height: 100%;
+	position: relative;
+	z-index: 100;
 }
 header .container-m h1{
 	font-size: 3rem;
@@ -111,6 +113,7 @@ header .container-m h1{
 	color: var(--font);
 	display: block;
 	width:20rem;
+	line-height: 1;
 }
 header .container-m nav.pc li {
 	margin:0 1rem;
@@ -146,10 +149,11 @@ footer .container-m ul{
 }
 footer .container-m li{
 	margin-right: 1rem;
+	line-height: 1;
 }
 footer .container-m li a,
 footer .container-m p{
 	font-size: 1.2rem;
-	line-height: 1;
+	line-height: 2;
 	font-weight: 700;
 }

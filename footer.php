@@ -29,25 +29,17 @@
 
 // ドロワーメニュー
 	$(function() {
-    var pagetop = $("#page_top");
-    //ボタン非表示
-    //pagetop.hide();
-    pagetop.css("display", "none");
-    //100px スクロールしたらボタン表示
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        pagetop.fadeIn();
-      } else {
-        pagetop.fadeOut();
-      }
-    });
-    pagetop.click(function () {
-      $("body, html").animate({ scrollTop: 0 }, 500);
-      return false;
-    });
-  });
-
-
+		$('#drwBtn').on('click', function() {
+			$('#drwBtn').toggleClass('active');
+			$('#drwMenu').toggleClass('active');
+			$('#drwArea').fadeToggle(500);
+		});
+		$('#drwAre').on('click', function() {
+			$('#drwBtn').toggleClass('active');
+			$('#drwMenu').toggleClass('active');
+			$('#drwArea').fadeToggle(500);
+		});
+	});
   // TOPに戻る
   $(function() {
     var pagetop = $("#page_top");

@@ -21,6 +21,7 @@ header{
 	width: 4rem;
 	height: 4rem;
 	position: relative;
+	cursor: pointer;
 }
 #drwBtn span{
 	position: absolute;
@@ -28,6 +29,7 @@ header{
 	width: 40px;
 	height:4px;
 	background-color: var(--tertiary);
+	transition:.5s;
 }
 
 #drwBtn span:nth-child(1){
@@ -41,10 +43,11 @@ header{
 }
 #drwMenu{
 	position: fixed;
-	top:400px;
+	top:-320px;
 	width: 100%;
 	background-color: var(--primary);
-	z-index: 100;
+	z-index: 50;
+	transition:.5s;
 }
 #drwMenu li{
 	width: 100%;
@@ -55,22 +58,54 @@ header{
 	color:var(--tertiary);
 	width:100%;
 	height: 100%;
-	padding:2rem;
+	padding:2rem 5%;
 	display: flex;
 }
 #drwMenu li.contact {
 	background-color: var(--tertiary);
 }
 #drwMenu li.contact a{
-	color:#fff
+	color:#fff;
 }
 #drwMenu li.contact img{
 	margin-right: 10px;
 }
-
-#drwArea.active{
-	background-color: #00000088;
+#drwBtn.active span:nth-child(1){
+	transform: rotate(315deg);
+	top:19px;
+}
+#drwBtn.active span:nth-child(2){
+	opacity: 0;
+}
+#drwBtn.active span:nth-child(3){
+	transform: rotate(-315deg);
+	top: 19px;
+}
+#drwMenu.active{
+	top:60px;
+}
+#drwArea{
+	background-color: #00000044;
 	position: fixed;
 	width: 100%;
 	height:100vh;
+	display: none;
+}
+/*------------------------------------
+フッター
+------------------------------------*/
+footer {
+	height:6rem;
+}
+footer .container-m{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+}
+footer .container-m nav ul{
+	justify-content: center;
+}
+footer .container-m nav ul li{
+	margin:0 10px;
 }
