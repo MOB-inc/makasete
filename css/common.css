@@ -27,9 +27,9 @@ body {
 }
 /* color変数 */
 :root {
-	--primary:#e77f19;
-	--secondary:#f46110;
-	--tertiary:#f9a827;
+	--primary:#ffcc00;
+	--secondary:#b20000 ;
+	--tertiary:#333333;
 	--font:#000;
 	--red:#ff0000;
 	--border:#5f6060;
@@ -38,6 +38,21 @@ body {
 /*--------------------------------------------------------------------------
 部品
 --------------------------------------------------------------------------*/
+.primary{
+	background-color: var(--primary);
+	width: 50px;
+	height: 50px;
+}
+.secondary{
+	background-color: var(--secondary);
+	width: 50px;
+	height: 50px;
+}
+.tertiary{
+	background-color: var(--tertiary);
+	width: 50px;
+	height: 50px;
+}
 
 /*------------------------------------
 アコーディオン機能

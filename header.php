@@ -27,6 +27,11 @@
 <link rel="stylesheet" media="screen and (min-width: 769px), print" href="<?php echo esc_url(get_theme_file_uri()); ?>/css/pc.css?ver1.0">
 <link rel="stylesheet" media="screen and (max-width: 768px) and (min-width: 0px)" href="<?php echo esc_url(get_theme_file_uri()); ?>/css/sp.css?ver1.0">
 
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
 
 <?php wp_head(); ?>
 </head>
