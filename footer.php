@@ -34,7 +34,7 @@
 			$('#drwMenu').toggleClass('active');
 			$('#drwArea').fadeToggle(500);
 		});
-		$('#drwAre').on('click', function() {
+		$('#drwArea').on('click', function() {
 			$('#drwBtn').toggleClass('active');
 			$('#drwMenu').toggleClass('active');
 			$('#drwArea').fadeToggle(500);
@@ -42,7 +42,7 @@
 	});
   // TOPに戻る
   $(function() {
-    var pagetop = $("#page_top");
+    var pagetop = $("#pageTop");
     //ボタン非表示
     //pagetop.hide();
     pagetop.css("display", "none");

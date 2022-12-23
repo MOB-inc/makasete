@@ -34,6 +34,7 @@ body {
 	--red:#ff0000;
 	--border:#5f6060;
 	--header:#ffcc0088;
+	--topbtn:#333333aa;
 }
 
 /*--------------------------------------------------------------------------
@@ -133,6 +134,18 @@ header .container-m nav.pc li.contact img{
 header .container-m nav.pc li.contact a{
 	color:#fff;
 }
+header #pageTop{
+	display: flex;
+  justify-content: center;
+	position: fixed;
+	bottom:5rem;
+	right:5rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	background-color: var(--topbtn);
+	cursor: pointer;
+}
 /*------------------------------------
 フッター
 ------------------------------------*/
@@ -156,4 +169,8 @@ footer .container-m p{
 	font-size: 1.2rem;
 	line-height: 2;
 	font-weight: 700;
+}
+/* topボタンテスト用あとでけす */
+main{
+	min-height: 200vh;
 }

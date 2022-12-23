@@ -26,6 +26,6 @@
 
 		</ul>
 	</nav>
-	<div id="drwArea">
-
+	<div id="drwArea"></div>
+	<div id="pageTop"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/up.svg" width="30" height="30" alt=""></div>
 </header>
