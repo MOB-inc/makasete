@@ -1,1 +1,10 @@
 @charset "UTF-8";
+.sp{
+	display: block;
+}
+.sp.flex{
+	display: flex;
+}
+.pc{
+	display:none;
+}
