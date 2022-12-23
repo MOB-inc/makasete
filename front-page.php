@@ -10,5 +10,5 @@
 	<section class="main-visual">
   </section>
 </main>
-
+<?php get_template_part('navi-footer'); ?>
 <?php get_footer(); ?>

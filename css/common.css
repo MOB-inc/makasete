@@ -96,7 +96,7 @@ header{
 	position: fixed;
 	top:0;
 	left:0;
-	background-color: var(--primary);
+	background-color: var(--header);
 	height:10rem;
 }
 header .container-m{
@@ -113,11 +113,10 @@ header .container-m h1{
 	width:20rem;
 }
 header .container-m nav.pc li {
-	margin:0 10px;
+	margin:0 1rem;
 }
 header .container-m nav.pc li a{
 	font-size: 1.4rem;
-	font-weight: 700;
 }
 header .container-m nav.pc li.contact{
 	background-color: var(--tertiary);
@@ -132,4 +131,25 @@ header .container-m nav.pc li.application{
 }
 header .container-m nav.pc li.contact a{
 	color:#fff;
+}
+/*------------------------------------
+フッター
+------------------------------------*/
+footer{
+	background-color: var(--primary);
+	height:8rem;
+}
+footer .container-m,
+footer .container-m ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer .container-m li{
+	margin-right: 1rem;
+}
+footer .container-m li a,
+footer .container-m p{
+	font-size: 1.2rem;
+	line-height: 1;
 }
