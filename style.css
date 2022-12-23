@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*
+Theme Name: 蒲生茶廊zenzai マルヤガーデンズ店
+Version: 1.0
+Author:  MOBINC.
+Description:  蒲生茶廊zenzai マルヤガーデンズ店
+*/
+
+/*Reset Stylesheet--------------------------------------------*/
+
+html, body, div, span, object, iframe, article, aside, canvas, details, pre, figcaption, figure,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, input, textarea, select, button, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	color: #414141;
+	font-family: 游明朝,'Yu Mincho','YuMincho',"Hiragino Mincho ProN","Hiragino Mincho Pro","Noto Serif JP",serif;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.7;
+	letter-spacing: 0;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	list-style: none;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+html {font-size: 10px;}
+body * {box-sizing: border-box;}
+html {overflow: auto; overflow-y: scroll;}
+body {position: relative; background: #fff; min-width: 100%; max-width: 100%;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+nav ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content: none;}
+p {margin: 0; padding: 0;}
+b {font-weight: 700;}
+address {text-decoration: none; font-style: normal;}
+a {margin: 0; padding: 0; font-size: 100%; color: #474747; vertical-align: baseline; background: transparent; text-decoration: none; transition: .4s ease;}
+a:hover {opacity: .6; cursor: pointer;}
+a:focus, *:focus {outline: none;}
+img {display: block; max-width: 100%; height: auto; transition: .5s ease;}
+a:hover img {cursor: pointer; zoom: 1;}
+svg,
+img[src$=".png"],
+img[src$=".pngz"] {display: block; max-width: 100%; height: auto;}
+ins {background: transparent; color: #333; text-decoration: none;}
+mark {background: transparent; color: #333; font-style: italic; font-weight: bold;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted; cursor: help;}
+table {border-collapse: collapse; border-spacing: 0;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #fff; margin: 0; padding: 0;}
+::selection {background: #ddd;}
+input {vertical-align: middle; position: relative; background: transparent;}
+select {appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; background: #fff;}
+button {background-color: transparent; border: none; cursor: pointer; outline: none; padding: 0; appearance: none;}
+input[type="submit"],input[type="reset"],input[type="button"],button {cursor: pointer; -webkit-appearance: button; -ms-appearance: none; *overflow: visible;}
+input[type="submit"] {border: none;}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0 1000px white inset;}
+select::-ms-expand {display: none;}
+select:focus {outline: none;}
+/* text */
+input::-ms-clear {visibility: hidden;}
+input:focus {outline: none;}
+/* password */
+input::-ms-reveal {visibility: hidden;}
+.display-name {color: #fff;}
+
+/*ハードウェアアクセラレータを強制作動*/
+.active {transform: translate3d(0,0,0);}
