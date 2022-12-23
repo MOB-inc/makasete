@@ -33,6 +33,7 @@ body {
 	--font:#000;
 	--red:#ff0000;
 	--border:#5f6060;
+	--header:#ffcc0088;
 }
 
 /*--------------------------------------------------------------------------
@@ -90,3 +91,45 @@ body {
 /*------------------------------------
 ヘッダー
 ------------------------------------*/
+header{
+	width: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: var(--primary);
+	height:10rem;
+}
+header .container-m{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+header .container-m h1{
+	font-size: 3rem;
+	font-weight: 700;
+	color: var(--font);
+	display: block;
+	width:20rem;
+}
+header .container-m nav.pc li {
+	margin:0 10px;
+}
+header .container-m nav.pc li a{
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+header .container-m nav.pc li.contact{
+	background-color: var(--tertiary);
+	padding: 4px 8px;
+}
+header .container-m nav.pc li.contact img{
+	margin-right: 5px;
+}
+header .container-m nav.pc li.application{
+	background-color: #fff;
+	padding: 4px 8px;
+}
+header .container-m nav.pc li.contact a{
+	color:#fff;
+}
