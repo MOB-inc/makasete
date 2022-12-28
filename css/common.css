@@ -37,6 +37,8 @@ body {
 	--header:#ffcc0088;
 	--topbtn:#333333aa;
 	--white: #fff;
+	--beige: #fff5cc;
+	--darkyellow: #cca300;
 }
 
 /*--------------------------------------------------------------------------
@@ -185,6 +187,7 @@ main{
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
+	/* height: calc(100vh - 5.4rem); */
 }
 
 #front .main-visual .container-s {
@@ -236,4 +239,22 @@ main{
 	background-color: var(--font);
 	border-radius: 1.5rem;
 	display: block;
+}
+
+/* MAKASETEってなに？セクション */
+#front .about-makasete {
+	background-color: var(--beige);
+}
+
+#front .about-makasete .container-s h2,
+#front .about-makasete .container-s h2 span {
+	color: var(--darkyellow);
+}
+
+#front .about-makasete .container-s h2 {
+	font-size: 4.6875vw;
+}
+
+#front .about-makasete .container-s h2 span {
+	font-size: 2rem;
 }
