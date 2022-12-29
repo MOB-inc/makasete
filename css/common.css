@@ -8,53 +8,70 @@
 ------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------*/
 body {
-  overflow: hidden;
+	overflow: hidden;
+}
+
+main {
+	background-color: var(--primary);
+}
+
+.cta {
+	text-align: center;
+	padding: 1vw 0;
+	display: block;
+	margin: 0 auto;
+	color: var(--white);
+	background-color: var(--font);
+	font-size: 3.7vw;
+	border-radius: 1.5rem;
+	font-weight: 700;
+	line-height: 3;
 }
 /*コンテナ*/
-.container-s{
+.container-s {
 	text-align: center;
 	margin: 0 auto;
 	max-width: 900px;
 	width: 90%;
 }
-.container-m{
+.container-m {
 	margin: 0 auto;
 	max-width: 1000px;
 	width: 90%;
 }
 /*汎用flex*/
 .flex {
-  display: flex;
+	display: flex;
 }
 /* color変数 */
 :root {
-	--primary:#ffcc00;
-	--secondary:#b20000 ;
-	--tertiary:#333333;
-	--font:#000;
-	--red:#ff0000;
-	--border:#5f6060;
-	--header:#ffcc0088;
-	--topbtn:#333333aa;
+	--primary: #f2c335;
+	--secondary: #b20000;
+	--tertiary: #333333;
+	--font: #000;
+	--red: #ff0000;
+	--border: #5f6060;
+	--header: #ffcc0088;
+	--topbtn: #333333aa;
 	--white: #fff;
 	--beige: #fff5cc;
-	--darkyellow: #cca300;
+	--darkyellow: #f2811d;
 }
 
 /*--------------------------------------------------------------------------
 部品
 --------------------------------------------------------------------------*/
-.primary{
+.primary {
 	background-color: var(--primary);
 	width: 50px;
 	height: 50px;
 }
-.secondary{
+.secondary {
 	background-color: var(--secondary);
 	width: 50px;
 	height: 50px;
 }
-.tertiary{
+.tertiary {
 	background-color: var(--tertiary);
 	width: 50px;
 	height: 50px;
@@ -75,36 +92,37 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	padding: 10px;
-	color:var(--blueline);
+	color: var(--blueline);
 	font-size: 16px;
-  cursor: pointer;
-  font-weight: 700;
+	cursor: pointer;
+	font-weight: 700;
 }
 .accordion-active {
-  height:auto;
+	height: auto;
 }
 #front .lunch .menu li h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 #front .lunch .menu li .desc {
-  border-bottom: 1px solid #707070;
+	border-bottom: 1px solid #707070;
 }
 #front .lunch .menu li .price {
-  text-align: right;
+	text-align: right;
 }
 
 /*------------------------------------
 ヘッダー
 ------------------------------------*/
-header{
+header {
 	width: 100%;
 	position: fixed;
-	top:0;
-	left:0;
+	z-index: 100;
+	top: 0;
+	left: 0;
 	background-color: var(--header);
-	height:8rem;
+	height: 8rem;
 }
-header .container-m{
+header .container-m {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -112,38 +130,38 @@ header .container-m{
 	position: relative;
 	z-index: 100;
 }
-header .container-m h1{
+header .container-m h1 {
 	font-size: 3rem;
 	font-weight: 700;
 	color: var(--font);
 	display: block;
-	width:20rem;
+	width: 20rem;
 	line-height: 1;
 }
 header .container-m nav.pc li {
-	margin:0 1rem;
+	margin: 0 1rem;
 }
-header .container-m nav.pc li a{
+header .container-m nav.pc li a {
 	font-size: 1.4rem;
 }
-header .container-m nav.pc li.contact{
+header .container-m nav.pc li.contact {
 	background-color: var(--tertiary);
 	padding: 4px 8px;
 	margin-right: 0;
 }
-header .container-m nav.pc li.contact img{
+header .container-m nav.pc li.contact img {
 	margin-right: 5px;
 }
 
-header .container-m nav.pc li.contact a{
-	color:#fff;
+header .container-m nav.pc li.contact a {
+	color: #fff;
 }
-header #pageTop{
+header #pageTop {
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 	position: fixed;
-	bottom:5rem;
-	right:5rem;
+	bottom: 5rem;
+	right: 5rem;
 	width: 5rem;
 	height: 5rem;
 	border-radius: 5rem;
@@ -153,30 +171,26 @@ header #pageTop{
 /*------------------------------------
 フッター
 ------------------------------------*/
-footer{
+footer {
 	background-color: var(--primary);
-	height:8rem;
+	height: 8rem;
 }
 footer .container-m,
-footer .container-m ul{
+footer .container-m ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
 }
-footer .container-m li{
+footer .container-m li {
 	margin-right: 1rem;
 	line-height: 1;
 }
 footer .container-m li a,
-footer .container-m p{
+footer .container-m p {
 	font-size: 1.2rem;
 	line-height: 2;
 	font-weight: 700;
-}
-/* topボタンテスト用あとでけす */
-main{
-	min-height: 200vh;
 }
 
 /* front-page */
@@ -184,7 +198,7 @@ main{
 #front .main-visual {
 	background-color: var(--primary);
 	background-image: url(../img/bg.png);
-	background-position: bottom;
+	background-position: 0 85%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	/* height: calc(100vh - 5.4rem); */
@@ -241,20 +255,234 @@ main{
 	display: block;
 }
 
+/* セクション区切り */
+.shapedividers_com-7008 {
+	overflow: hidden;
+	position: relative;
+}
+.shapedividers_com-7008::before {
+	content: "";
+	font-family: "shape divider from ShapeDividers.com";
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+	top: -1px;
+	z-index: 3;
+	pointer-events: none;
+	background-repeat: no-repeat;
+	background-size: 130% 29px;
+	background-position: 50% 100%;
+	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100.86 4.15"><path fill="%23fff5cc" d="M100.86 4.15V.65a9.07 9.07 0 0 0-9.37 1.67 9.07 9.07 0 0 0-12.1 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.06 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.09 0 9.07 9.07 0 0 0-12.08 0 9.07 9.07 0 0 0-12.08 0A9.07 9.07 0 0 0 0 .04v4.1z"/></svg>');
+}
+
+@media (min-width: 768px) {
+	.shapedividers_com-7008::before {
+		background-size: 100% 50px;
+		background-position: 50% 100%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.shapedividers_com-7008::before {
+		bottom: -0.1vw;
+		left: -0.1vw;
+		right: -0.1vw;
+		top: -0.1vw;
+		background-size: 100% 100px;
+		background-position: 50% 100%;
+	}
+}
+@media (min-width: 2100px) {
+	.shapedividers_com-7008::before {
+		background-size: 100% calc(2vw + 100px);
+	}
+}
+
+/* .shapedividers_com-1281 {
+	position: relative;
+} */
+/* .shapedividers_com-1281::after {
+	content: "";
+	font-family: "shape divider from ShapeDividers.com";
+	position: absolute;
+	height: 3rem;
+	width: 100%;
+	display: block;
+	z-index: 3;
+	pointer-events: none;
+	background-repeat: no-repeat;
+	background-size: 130% 29px;
+	background-position: 50% 0%;
+	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100.86 4.15"><path fill="%23fff5cc" d="M0 0v3.5a9.07 9.07 0 0 0 9.37-1.67 9.07 9.07 0 0 0 12.1 0 9.07 9.07 0 0 0 12.11 0 9.07 9.07 0 0 0 12.06 0 9.07 9.07 0 0 0 12.11 0 9.07 9.07 0 0 0 12.08 0 9.07 9.07 0 0 0 12.09 0 9.07 9.07 0 0 0 12.08 0 9.07 9.07 0 0 0 6.86 2.28V.01z"/></svg>');
+}
+
+@media (min-width: 768px) {
+	.shapedividers_com-1281::after {
+		background-size: 100% 49px;
+		background-position: 50% 0%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.shapedividers_com-1281::after {
+		bottom: -0.1vw;
+		left: -0.1vw;
+		right: -0.1vw;
+		top: -0.1vw;
+		background-size: 100% 90px;
+		background-position: 50% 0%;
+	}
+}
+@media (min-width: 2100px) {
+	.shapedividers_com-1281::after {
+		background-size: 100% calc(2vw + 90px);
+	}
+} */
+
 /* MAKASETEってなに？セクション */
 #front .about-makasete {
 	background-color: var(--beige);
 }
 
-#front .about-makasete .container-s h2,
-#front .about-makasete .container-s h2 span {
-	color: var(--darkyellow);
+#front .about-makasete .container-s {
+	padding-top: 13rem;
 }
 
 #front .about-makasete .container-s h2 {
+	text-align: right;
 	font-size: 4.6875vw;
+	font-weight: 600;
 }
 
 #front .about-makasete .container-s h2 span {
+	text-align: center;
+	font-size: 17.4vw;
+	letter-spacing: 0.02em;
+	display: block;
+	color: var(--darkyellow);
+	line-height: 1;
+}
+
+#front .about-makasete .container-s > p:nth-of-type(1) {
+	color: var(--darkyellow);
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin: 20vw 0 10vw;
+	letter-spacing: 0.1em;
+}
+
+#front .about-makasete .container-s > p:nth-of-type(2) {
+	font-size: 1.2rem;
+}
+
+#front .about-makasete .container-s picture img {
+	margin: 0 auto;
+}
+
+/* pointセクション */
+/* セクション区切り */
+/* .shapedividers_com-1967 {
+	position: relative;
+} */
+/* .shapedividers_com-1967::before {
+	content: "";
+	font-family: "shape divider from ShapeDividers.com";
+	position: absolute;
+	display: block;
+	height: 3rem;
+	width: 100%;
+	top: -3rem;
+	z-index: 3;
+	pointer-events: none;
+	background-repeat: no-repeat;
+	background-size: 130% 29px;
+	background-position: 50% 100%;
+	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100.86 4.15"><path fill="%23fff5cc" d="M100.86 4.15V.65a9.07 9.07 0 0 0-9.37 1.67 9.07 9.07 0 0 0-12.1 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.06 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.09 0 9.07 9.07 0 0 0-12.08 0 9.07 9.07 0 0 0-12.08 0A9.07 9.07 0 0 0 0 .04v4.1z"/></svg>');
+}
+
+@media (min-width: 768px) {
+	.shapedividers_com-1967::before {
+		background-size: 100% 49px;
+		background-position: 50% 100%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.shapedividers_com-1967::before {
+		bottom: -0.1vw;
+		left: -0.1vw;
+		right: -0.1vw;
+		top: -0.1vw;
+		background-size: 100% 90px;
+		background-position: 50% 100%;
+	}
+}
+@media (min-width: 2100px) {
+	.shapedividers_com-1967::before {
+		background-size: 100% calc(2vw + 90px);
+	}
+} */
+
+#front .point {
+	padding-bottom: 15vw;
+	margin-top: 2rem;
+	background-color: var(--beige);
+}
+
+#front .point .container-s {
+	padding-top: 10vw;
+}
+
+#front .point .container-s ul li {
+	margin-bottom: 10vw;
+}
+
+#front .point .container-s ul li p:nth-of-type(1) {
+	font-size: 1.7rem;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+
+#front .point .container-s ul li h2 {
+	letter-spacing: 0;
+	font-weight: 600;
+	line-height: 1.6;
 	font-size: 2rem;
+}
+
+#front .point .container-s ul li p:nth-of-type(2) {
+	margin: 3.5vw 0;
+	text-align: left;
+	font-size: 1.3rem;
+	line-height: 2.1;
+}
+
+#front .point .container-s ul li picture {
+	background-color: #fff;
+	display: block;
+	border-radius: 1rem;
+}
+
+#front .point .container-s ul li picture img {
+	margin: 0 auto;
+	width: 90%;
+}
+
+/* サービスセクション */
+#front .service {
+	padding-top: 23vw;
+}
+
+#front .service .container-s {
+	width: 95%;
+	background-color: var(--white);
+	border-radius: 10vw;
+}
+
+#front .service .container-s h2 span {
+	display: block;
+	font-size: 8rem;
+	font-weight: 700;
+	letter-spacing: 0;
 }

@@ -16,7 +16,7 @@ small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, input, textarea, select, button, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	color: #414141;
+	color: #000;
 	font-family: "Noto Sans","Noto Sans JP";
 	font-size: inherit;
 	font-style: normal;
