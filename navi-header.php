@@ -1,5 +1,6 @@
 <header id="header">
 	<div class="container-m">
+		<p>定額デザインサービス</p>
 		<h1 class="logo">MAKASETE</h1>
 		<nav class="pc">
 			<ul class="flex">
@@ -11,7 +12,7 @@
 			</ul>
 		</nav>
 		<!-- ハンバーガーメニュー -->
-		<div id="drwBtn" class="sp">
+		<!-- <div id="drwBtn" class="sp">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -26,6 +27,6 @@
 
 		</ul>
 	</nav>
-	<div id="drwArea"></div>
+	<div id="drwArea"></div> -->
 	<div id="pageTop"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/up.svg" width="30" height="30" alt=""></div>
 </header>

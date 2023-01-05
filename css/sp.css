@@ -13,8 +13,7 @@
 ヘッダー
 ------------------------------------*/
 header{
-	background-color: var(--primary);
-	height:6rem;
+	height:8rem;
 }
 
 #drwBtn{
@@ -95,13 +94,13 @@ header{
 フッター
 ------------------------------------*/
 footer {
-	height:6rem;
+	height:20rem;
 }
 footer .container-m{
+	padding: 3rem 0;
 	display: flex;
 	text-align: center;
 	flex-direction: column;
-	justify-content: center;
 }
 footer .container-m nav ul{
 	justify-content: center;
