@@ -2,29 +2,43 @@
 <?php get_template_part('navi-header'); ?>
 <!-- TOPページ -->
 <main id="front">
-	<section class="main-visual shapedividers_com-7008">
+	<section class="main-visual">
 		<div class="container-s">
-			<h1><span>定額デザインサービス</span>MAKASETE</h1>
-			<p>デザインのことなら<br>すべておまかせください</p>
-			<a>資料請求・お問合わせはこちらから</a>
+			<p><span>デザイン</span>のことなら<br>すべておまかせください</p>
 			<picture class="img-box">
-				
+				<source srcset="<?php echo esc_url(get_theme_file_uri()); ?>/img/makasete.webp" type="image/webp">
+				<img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/makasete.png" alt="" width="317" height="330">
 			</picture>
+			<a>資料請求・お問合わせはこちらから</a>
 		</div>
 	</section>
-	<section class="about-makasete shapedividers_com-1281">
+	<section class="about-makasete">
 		<div class="container-s">
-			<h2><span>MAKASETE</span>ってなに？</h2>
-			<p>スタート時に必要なものを<br>定額でプロにおまかせしてみませんか？</p>
-			<p>名刺、ロゴ、HPなど、とりあえず作ったもので<br>そろそろ変えたい・・・<br>自社にデザイナー、コーダーがいない・・・<br>そんなときに、MAKASETEに丸投げしてみませんか？
+			<h2>MAKASETEってなに？</h2>
+			<p><span>＼</span>スタート時に必要なものを定額でプロにおまかせしてみませんか？<span>／</span>
+			</p>
+			<p>
+				名刺、ロゴ、HPなど、とりあえず作ったものでそろそろ変えたい・・・<br>
+				自社にデザイナー、コーダーがいない・・・
 			</p>
 			<picture>
 				<source srcset="<?php echo esc_url(get_theme_file_uri()); ?>/img/about-makasete.webp" type="image/webp">
-				<img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about-makasete.png" alt="" width="341" height="177">
+				<img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about-makasete.png" alt="" width="106" height="158">
 			</picture>
 		</div>
 	</section>
-	<section class="point shapedividers_com-1967">
+	<section class="marunage">
+		<div class="container-s">
+			<div class="flex">
+				<picture>
+					<source srcset="<?php echo esc_url(get_theme_file_uri()); ?>/img/kaiketsu.webp" type="image/webp">
+					<img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/kaiketsu.png" alt="" width="108" height="123">
+				</picture>
+				<p>そんなときに、<span>MAKASETE</span>に丸投げしてみてみませんか？</p>
+			</div>
+		</div>
+	</section>
+	<section class="point">
 		<div class="container-s">
 			<ul>
 				<li>

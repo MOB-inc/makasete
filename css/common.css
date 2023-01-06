@@ -41,14 +41,14 @@ body {
 }
 /* color変数 */
 :root {
-	--primary: #f2c335;
+	--primary: #ffb23b;
 	--secondary: #b20000;
 	--tertiary: #333333;
 	--font: #000;
 	--red: #ff0000;
 	--border: #5f6060;
 	--header: #ffcc0088;
-	--topbtn: #16c4fd;
+	--blue: #16c4fd;
 	--white: #fff;
 	--black: #000;
 	--beige: #fff5cc;
@@ -167,7 +167,7 @@ header #pageTop {
 	width: 5rem;
 	height: 5rem;
 	border-radius: 5rem;
-	background-color: var(--topbtn);
+	background-color: var(--blue);
 	cursor: pointer;
 }
 /*------------------------------------
@@ -247,193 +247,105 @@ footer .container-m p {
 }
 
 #front .main-visual .container-s > p {
-	margin: 6.55vw 0;
-	text-align: center;
-	font-size: 6.5vw;
+	margin: 6.55vw 0 0;
+	text-align: left;
+	font-size: 2.5rem;
+	line-height: 2.3;
 	font-weight: 700;
 	color: var(--font);
 }
 
+#front .main-visual .container-s > p span {
+	margin-right: 0.5rem;
+	font-weight: 700;
+	padding: 0.1em 0.3em;
+	background-color: var(--blue);
+	color: var(--white);
+	font-size: 3.5rem;
+}
+
+#front .main-visual .container-s .img-box img {
+	margin: auto;
+	width: 100%;
+}
+
 #front .main-visual .container-s > a {
 	margin: 0 auto;
-	padding: 2vw 8vw;
+	padding: 0.95em 0;
 	font-size: 4.0625vw;
 	font-weight: 700;
 	color: var(--white);
-	background-color: var(--font);
-	border-radius: 1.5rem;
+	background-color: var(--blue);
+	border-radius: 10vw;
 	display: block;
 }
-
-/* セクション区切り */
-.shapedividers_com-7008 {
-	overflow: hidden;
-	position: relative;
-}
-.shapedividers_com-7008::before {
-	content: "";
-	font-family: "shape divider from ShapeDividers.com";
-	position: absolute;
-	bottom: -1px;
-	left: -1px;
-	right: -1px;
-	top: -1px;
-	z-index: 3;
-	pointer-events: none;
-	background-repeat: no-repeat;
-	background-size: 130% 29px;
-	background-position: 50% 100%;
-	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100.86 4.15"><path fill="%23fff5cc" d="M100.86 4.15V.65a9.07 9.07 0 0 0-9.37 1.67 9.07 9.07 0 0 0-12.1 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.06 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.09 0 9.07 9.07 0 0 0-12.08 0 9.07 9.07 0 0 0-12.08 0A9.07 9.07 0 0 0 0 .04v4.1z"/></svg>');
-}
-
-@media (min-width: 768px) {
-	.shapedividers_com-7008::before {
-		background-size: 100% 50px;
-		background-position: 50% 100%;
-	}
-}
-
-@media (min-width: 1025px) {
-	.shapedividers_com-7008::before {
-		bottom: -0.1vw;
-		left: -0.1vw;
-		right: -0.1vw;
-		top: -0.1vw;
-		background-size: 100% 100px;
-		background-position: 50% 100%;
-	}
-}
-@media (min-width: 2100px) {
-	.shapedividers_com-7008::before {
-		background-size: 100% calc(2vw + 100px);
-	}
-}
-
-/* .shapedividers_com-1281 {
-	position: relative;
-} */
-/* .shapedividers_com-1281::after {
-	content: "";
-	font-family: "shape divider from ShapeDividers.com";
-	position: absolute;
-	height: 3rem;
-	width: 100%;
-	display: block;
-	z-index: 3;
-	pointer-events: none;
-	background-repeat: no-repeat;
-	background-size: 130% 29px;
-	background-position: 50% 0%;
-	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100.86 4.15"><path fill="%23fff5cc" d="M0 0v3.5a9.07 9.07 0 0 0 9.37-1.67 9.07 9.07 0 0 0 12.1 0 9.07 9.07 0 0 0 12.11 0 9.07 9.07 0 0 0 12.06 0 9.07 9.07 0 0 0 12.11 0 9.07 9.07 0 0 0 12.08 0 9.07 9.07 0 0 0 12.09 0 9.07 9.07 0 0 0 12.08 0 9.07 9.07 0 0 0 6.86 2.28V.01z"/></svg>');
-}
-
-@media (min-width: 768px) {
-	.shapedividers_com-1281::after {
-		background-size: 100% 49px;
-		background-position: 50% 0%;
-	}
-}
-
-@media (min-width: 1025px) {
-	.shapedividers_com-1281::after {
-		bottom: -0.1vw;
-		left: -0.1vw;
-		right: -0.1vw;
-		top: -0.1vw;
-		background-size: 100% 90px;
-		background-position: 50% 0%;
-	}
-}
-@media (min-width: 2100px) {
-	.shapedividers_com-1281::after {
-		background-size: 100% calc(2vw + 90px);
-	}
-} */
 
 /* MAKASETEってなに？セクション */
 #front .about-makasete {
-	background-color: var(--beige);
+	background-color: var(--primary);
+	position: relative;
+}
+
+#front .about-makasete::after {
+	position: absolute;
+	content: "";
+	top: 100%;
+	box-sizing: border-box;
+	border-right: 50vw solid transparent;
+	border-left: 50vw solid transparent;
+	border-top: 3rem solid var(--primary);
 }
 
 #front .about-makasete .container-s {
-	padding-top: 13rem;
+	padding-top: 16vw;
 }
 
 #front .about-makasete .container-s h2 {
-	text-align: right;
-	font-size: 4.6875vw;
-	font-weight: 600;
-}
-
-#front .about-makasete .container-s h2 span {
 	text-align: center;
-	font-size: 17.4vw;
-	letter-spacing: 0.02em;
+	line-height: 1.2;
+	font-size: 2.9375rem;
+	font-weight: 700;
+}
+
+#front .about-makasete .container-s p:nth-of-type(1) {
+	margin-top: 8vw;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+}
+
+#front .about-makasete .container-s p:nth-of-type(1) span {
+	color: var(--white);
+	font-size: 3.5625rem;
+	font-weight: 700;
+}
+
+#front .about-makasete .container-s p:nth-of-type(2) {
+	text-align: left;
+	margin-top: 13.33333333333vw;
+	width: 74.1333333333333vw;
+	font-size: 1.4rem;
+	padding: 7.4666666667vw 7.4666666667vw 7.4666666667vw 7.4666666667vw;
+	background-color: var(--white);
+}
+
+#front .about-makasete .container-s p:nth-of-type(2)::after {
+	left: 35%;
+	bottom: -3rem;
+	content: '';
+	z-index: -1;
 	display: block;
-	color: var(--darkyellow);
-	line-height: 1;
-}
-
-#front .about-makasete .container-s > p:nth-of-type(1) {
-	color: var(--darkyellow);
-	font-size: 1.6rem;
-	font-weight: 600;
-	margin: 20vw 0 10vw;
-	letter-spacing: 0.1em;
-}
-
-#front .about-makasete .container-s > p:nth-of-type(2) {
-	font-size: 1.2rem;
+	position: absolute;
+	border-top: 11.6rem solid var(--white);
+	border-left: 9rem solid transparent;
 }
 
 #front .about-makasete .container-s picture img {
-	margin: 0 auto;
+	margin: 0 0 0 auto;
+	width: 80%;
 }
 
-/* pointセクション */
-/* セクション区切り */
-/* .shapedividers_com-1967 {
-	position: relative;
-} */
-/* .shapedividers_com-1967::before {
-	content: "";
-	font-family: "shape divider from ShapeDividers.com";
-	position: absolute;
-	display: block;
-	height: 3rem;
-	width: 100%;
-	top: -3rem;
-	z-index: 3;
-	pointer-events: none;
-	background-repeat: no-repeat;
-	background-size: 130% 29px;
-	background-position: 50% 100%;
-	background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100.86 4.15"><path fill="%23fff5cc" d="M100.86 4.15V.65a9.07 9.07 0 0 0-9.37 1.67 9.07 9.07 0 0 0-12.1 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.06 0 9.07 9.07 0 0 0-12.11 0 9.07 9.07 0 0 0-12.09 0 9.07 9.07 0 0 0-12.08 0 9.07 9.07 0 0 0-12.08 0A9.07 9.07 0 0 0 0 .04v4.1z"/></svg>');
-}
-
-@media (min-width: 768px) {
-	.shapedividers_com-1967::before {
-		background-size: 100% 49px;
-		background-position: 50% 100%;
-	}
-}
-
-@media (min-width: 1025px) {
-	.shapedividers_com-1967::before {
-		bottom: -0.1vw;
-		left: -0.1vw;
-		right: -0.1vw;
-		top: -0.1vw;
-		background-size: 100% 90px;
-		background-position: 50% 100%;
-	}
-}
-@media (min-width: 2100px) {
-	.shapedividers_com-1967::before {
-		background-size: 100% calc(2vw + 90px);
-	}
-} */
-
+/* ポイントセクション */
 #front .point {
 	padding-bottom: 15vw;
 	margin-top: 2rem;
