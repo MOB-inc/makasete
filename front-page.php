@@ -34,16 +34,19 @@
 					<source srcset="<?php echo esc_url(get_theme_file_uri()); ?>/img/kaiketsu.webp" type="image/webp">
 					<img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/kaiketsu.png" alt="" width="108" height="123">
 				</picture>
-				<p>そんなときに、<span>MAKASETE</span>に丸投げしてみてみませんか？</p>
+				<p>そんなときに、<span>MAKASETE</span>に丸投げしてみませんか？</p>
 			</div>
 		</div>
 	</section>
 	<section class="point">
 		<div class="container-s">
+			<h2>ポイント</h2>
 			<ul>
 				<li>
-					<p>point.1</p>
-					<h2>自社の制作チーム感覚で<br>気軽に何度も利用出来ます。</h2>
+					<div class="flex">
+						<p>1</p>
+						<h3>自社の制作チーム感覚で<br>気軽に何度も利用出来ます。</h3>
+					</div>
 					<p>
 						月額定額サービスなので、修正するたびに都度お見積りが必要なく、スムーズに制作を進める事が可能です。
 						また、予算を気にせずに何度もでも、ご気軽にご依頼いただけます。
@@ -54,8 +57,10 @@
 					</picture>
 				</li>
 				<li>
-					<p>point.2</p>
-					<h2>経験豊富なプロが作るから安心。<br>事業に集中出来ます。</h2>
+					<div class="flex">
+						<p>2</p>
+						<h3>経験豊富なプロが作るから安心。<br>事業に集中出来ます。</h3>
+					</div>
 					<p>
 						戦略を踏まえたデザイン、内部の最適化等、お客様にあった最適解をご提案いたします。<br>
 						提案ベースで進んでいくので、余計なことは考えず、事業に集中して取り組む事が可能です。
@@ -66,8 +71,10 @@
 					</picture>
 				</li>
 				<li>
-					<p>point.3</p>
-					<h2>ブランドイメージの統一。</h2>
+					<div class="flex">
+						<p>3</p>
+						<h3>ブランドイメージの統一。</h3>
+					</div>
 					<p>
 						ロゴ制作からHP製作、名刺などもワンストップで制作するため、ブランドイメージを統一して作成が可能です。<br>
 						フォントやあしらいなど、細かいイメージを統一をして、ブランドイメージの確立をお手伝いいたします。
